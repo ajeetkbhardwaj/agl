@@ -1,0 +1,56 @@
+site_name: agl
+site_description: >-
+  Algebraic-geometry-powered orthogonal polynomial neural networks —
+  theory documentation and verified real-world tutorials.
+repo_name: agl
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - fenced_code
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - js/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js
+
+nav:
+  - Home: index.md
+  - Algebraic Geometry:
+      - Part I: Algebraic Geometry - Part-I.md
+      - Part II: Algebraic Geometry - Part-II.md
+      - Part III: Algebraic Geometry - Part-III.md
+  - Neural Networks:
+      - Part I: Neural Networks - Part-I.md
+      - Part II: Neural Networks - Part-II.md
+      - Part III: Neural Networks - Part-III.md
+  - Utilities:
+      - Part I: Utilities - Part-I.md
+  - Tutorials:
+      - "1. Kepler's Third Law": Tutorial 1 - Keplers Third Law.md
+      - "2. Mauna Loa CO2": Tutorial 2 - Mauna Loa CO2.md
+      - "3. Sunspot Forecasting": Tutorial 3 - Sunspot Forecasting.md
+      - "4. Concrete Strength": Tutorial 4 - Concrete Strength.md
+      - "5. Power Plant Output": Tutorial 5 - Power Plant Output.md
+      - "6. Airfoil Noise": Tutorial 6 - Airfoil Noise.md
