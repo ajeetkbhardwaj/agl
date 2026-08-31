@@ -1,1 +1,2 @@
 # Algebraic Geometric Learning
+Intro
